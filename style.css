@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    height: 600px;
+    background-color: lightslategray;
+}
+.heading{
+    position: absolute;
+    margin-top: -400px;
+}
+h1{
+    font-size: 50px;
+}
+h2{
+    font-size: 100px;
+    font-weight: 800;
+    text-shadow: 4px 1px 7px #ffffff;
+    position: relative;
+}
+h2::before{
+    content: "WEB DESIGN";
+    color: cadetblue;
+    text-shadow: none;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    width: 0;
+    left: 0;
+    border-right: 20px solid cadetblue;
+    white-space: nowrap;
+    animation: move 3s linear infinite;
+}
+@keyframes move{
+    to{
+        width: 100%;
+    }
+}
